@@ -22,6 +22,14 @@
     <link rel="stylesheet" href="{{asset('admin-site/vendor/datatables/dataTables.bootstrap4.min.css')}}">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+    <link
+    href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+    rel="stylesheet"
+    />
+    <meta name="csrf-token" content="{{csrf_token()}}">
+
 </head>
 
 <body id="page-top">
@@ -89,6 +97,16 @@
     <!-- Page level custom scripts -->
     <script src="{{asset('admin-site/js/demo/datatables-demo.js')}}"></script>
 
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <!-- Fild Pound -->
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
     @yield('customeJS')
 </body>
 

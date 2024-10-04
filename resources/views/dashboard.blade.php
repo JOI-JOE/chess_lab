@@ -50,9 +50,6 @@
         </div>
     </div>
     @endforeach
-
 </div>
-
-
 <!-- Content Row -->
 @endsection
