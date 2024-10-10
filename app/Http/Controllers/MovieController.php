@@ -36,7 +36,7 @@ class MovieController extends Controller
             $movie->release_date = $request->release_date;
             $movie->genre_id    = $request->genre_id;
             $movie->save();
-            Storage::deleteDirectory('images/tmp/' . $tmp_file->folder);
+            Storage::deleteDirectory(directory: 'images/tmp/' . $tmp_file->folder);
             $tmp_file->delete();
             return response()->json([
                 'status' => true,

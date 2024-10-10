@@ -3,7 +3,9 @@
 @section('content')
 <div class="container-fluid">
 
-
+    <div class="row m-3">
+        <a href="{{route('movie.create')}}" class="btn btn-success">ADD NEW</a>
+    </div>
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3 d-flex" style="justify-content: space-between">

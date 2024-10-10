@@ -20,9 +20,6 @@ class DatabaseSeeder extends Seeder
         Movie::factory(50)->create();
         // Category::factory(2)->create();
 
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        User::factory(10)->create();
     }
 }

@@ -25,10 +25,20 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
+        <a class="nav-link" href="{{route('user.list')}}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>User</span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="{{route('list')}}">
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a>
     </li>
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="{{route('list')}}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Tables</span></a>
+    </li> --}}
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
